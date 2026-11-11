@@ -1,4 +1,4 @@
-import { db } from "@/db";
+import { getDb } from "@/db";
 import { registrations } from "@/db/schema";
 import { normalizeRegisterInput, validateRegisterInput } from "@/lib/validation";
 import { NextResponse } from "next/server";
@@ -125,7 +125,7 @@ export async function POST(request: Request) {
   }
 
   try {
-    await db.insert(registrations).values({
+    await getDb().insert(registrations).values({
       name: input.name,
       telegram: input.telegram,
       phone: input.phone,
