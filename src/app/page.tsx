@@ -139,7 +139,7 @@ function Hero() {
           <div className="orb left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 bg-cyan-400/20" />
           <div className="floaty relative mx-auto max-w-md">
             <Image
-              src="/images/knot.png"
+              src="/images/knot.webp"
               alt=""
               width={460}
               height={500}
@@ -292,7 +292,7 @@ function Speaker() {
           <div className="absolute -inset-4 rounded-[2.2rem] bg-gradient-to-br from-cyan-400/25 via-transparent to-amber-400/25 blur-2xl" />
           <div className="glow-border relative overflow-hidden rounded-[2rem] bg-black">
             <Image
-              src="/images/speaker.jpg"
+              src="/images/speaker.webp"
               alt="Кирилл Молодой — CEO & Founder ASIMO.BY"
               width={800}
               height={1200}
