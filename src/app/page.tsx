@@ -109,7 +109,7 @@ function Hero() {
         <div>
           <div className="inline-flex items-center gap-2 rounded-full border border-cyan-300/25 bg-cyan-300/10 px-3 py-1.5 text-xs font-medium text-cyan-200">
             <span className="pulse-dot h-1.5 w-1.5 rounded-full bg-cyan-300" />
-            21 ноября 2026 · Минск · онлайн-трансляция
+            21 ноября 2026 · Минск
           </div>
           <h1 className="font-display mt-6 max-w-xl text-[clamp(2.1rem,5.4vw,4.4rem)] leading-[1.05] tracking-tight text-white">
             Создание отдела SMM из AI-агентов
@@ -124,7 +124,7 @@ function Hero() {
           </p>
           <p className="mt-4 inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3.5 py-1.5 text-xs font-medium text-cyan-200">
             <span aria-hidden>📅</span>
-            21 ноября 2026 · Минск · онлайн-трансляция
+            21 ноября 2026 · Минск
           </p>
 <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
               <a
