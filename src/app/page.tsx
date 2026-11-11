@@ -1,5 +1,6 @@
 import Image from "next/image";
 import RegisterForm from "@/components/RegisterForm";
+import SeatCounter from "@/components/SeatCounter";
 
 const STEPS = [
   {
@@ -108,7 +109,7 @@ function Hero() {
         <div>
           <div className="inline-flex items-center gap-2 rounded-full border border-cyan-300/25 bg-cyan-300/10 px-3 py-1.5 text-xs font-medium text-cyan-200">
             <span className="pulse-dot h-1.5 w-1.5 rounded-full bg-cyan-300" />
-            Бесплатный интенсив · мест ограничено
+            21 ноября 2026 · Минск · онлайн-трансляция
           </div>
           <h1 className="font-display mt-6 max-w-xl text-[clamp(2.1rem,5.4vw,4.4rem)] leading-[1.05] tracking-tight text-white">
             Создание отдела SMM из AI-агентов
@@ -121,18 +122,19 @@ function Hero() {
             Узнайте, как собрать отдел SMM на AI-агентах: от поиска актуальных тем до публикации и
             контроля контента во всех ключевых каналах
           </p>
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-            <a
-              href="#register"
-              className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-cyan-300 via-teal-300 to-cyan-200 px-7 py-3.5 text-sm font-semibold text-slate-950 shadow-[0_12px_40px_rgba(46,233,208,0.28)] transition hover:brightness-105"
-            >
-              Зарегистрироваться бесплатно
-            </a>
-            <div className="flex items-center gap-2 text-sm text-amber-200">
-              <span className="pulse-dot h-2 w-2 rounded-full bg-amber-400" />
-              Осталось 14 мест из 30
+          <p className="mt-4 inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3.5 py-1.5 text-xs font-medium text-cyan-200">
+            <span aria-hidden>📅</span>
+            21 ноября 2026 · Минск · онлайн-трансляция
+          </p>
+<div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+              <a
+                href="#register"
+                className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-cyan-300 via-teal-300 to-cyan-200 px-7 py-3.5 text-sm font-semibold text-slate-950 shadow-[0_12px_40px_rgba(46,233,208,0.28)] transition hover:brightness-105"
+              >
+                Зарегистрироваться бесплатно
+              </a>
+              <SeatCounter />
             </div>
-          </div>
         </div>
 
         <div className="relative">
@@ -336,9 +338,16 @@ function Register() {
           <h2 className="font-display mt-3 text-3xl leading-tight text-white sm:text-4xl">
             Зарегистрироваться на бесплатный интенсив
           </h2>
+          <p className="mt-2 inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1.5 text-xs font-medium text-cyan-200">
+            <span aria-hidden>📅</span>
+            21 ноября 2026 · Минск
+          </p>
           <p className="mt-4 max-w-md text-slate-400">
             Оставьте заявку — мы свяжемся с вами и пришлём детали участия.
           </p>
+          <div className="mt-6">
+            <SeatCounter />
+          </div>
           <ul className="mt-8 space-y-3 text-sm text-slate-300">
             {[
               "Разберём архитектуру AI-отдела SMM",
@@ -367,7 +376,7 @@ function Footer() {
           <Image src="/images/metabox-logo-final.png" alt="MetaBox" width={36} height={36} className="logo-blend h-8 w-8 object-contain" />
         </div>
         <p className="text-xs text-slate-500">
-          Бесплатный интенсив ASIMO.BY · данные заявок используются только для связи с участниками
+          Бесплатный интенсив ASIMO.BY · 21 ноября 2026, Минск · данные заявок используются только для связи с участниками
         </p>
       </div>
     </footer>

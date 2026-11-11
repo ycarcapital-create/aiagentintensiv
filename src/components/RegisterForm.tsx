@@ -65,6 +65,10 @@ export default function RegisterForm() {
       setStatus("success");
       setMessage("Заявка отправлена! Мы свяжемся с вами в Telegram.");
       setValues(INITIAL);
+      // Decrement the seat counter on the landing page without a reload.
+      if (typeof window !== "undefined" && typeof (window as unknown as { __seatBump?: () => void }).__seatBump === "function") {
+        (window as unknown as { __seatBump?: () => void }).__seatBump!();
+      }
     } catch {
       setStatus("error");
       setMessage("Не удалось отправить заявку. Проверьте соединение и попробуйте ещё раз.");
